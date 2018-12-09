@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Quick Note</string>
+    <string name="action_button_create_note">Note</string>
+    <string name="action_button_create_folder">Folder</string>
 </resources>
