@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,37 +7,12 @@
 
     <include layout="@layout/navigation_bar" />
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/floatMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="bottom|right"
-        app:fab_addButtonColorNormal="@color/color_floating_button_normal"
-        app:fab_addButtonColorPressed="@color/color_floating_button_pressed"
-        app:fab_addButtonStrokeVisible="false"
-        app:fab_addButtonSize="mini"
-        app:fab_labelStyle="@style/menu_labels_style">
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btnCreateFolder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fab_colorNormal="@color/color_floating_button_normal"
-            app:fab_colorPressed="@color/color_floating_button_pressed"
-            app:fab_icon="@mipmap/ic_folder_button"
-            app:fab_size="mini"
-            app:fab_stroke_visible="false"
-            app:fab_title="@string/action_button_create_folder" />
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btnCreateNote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fab_size="mini"
-            app:fab_colorNormal="@color/color_floating_button_normal"
-            app:fab_colorPressed="@color/color_floating_button_pressed"
-            app:fab_icon="@mipmap/ic_note_button"
-            app:fab_stroke_visible="false"
-            app:fab_title="@string/action_button_create_note" />
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_menu_add_p" />
 </FrameLayout>
